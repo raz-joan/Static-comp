@@ -1,0 +1,59 @@
+* {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: dotted black 2px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1vw 2vw;
+}
+
+.sign-in-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-selection {
+  font-weight: bolder;
+  color: #784226;
+}
+
+main {}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-in-img {
+  width: 2vw;
+}
+
+img {
+  width: 3vw;
+  margin: 1vh;
+}
+
+h1,
+p {
+  margin: 1vw;
+}
