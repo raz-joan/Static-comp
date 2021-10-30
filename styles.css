@@ -7,10 +7,12 @@ body {
   flex-direction: column;
 }
 
+/* header styling */
 header {
   display: flex;
   justify-content: space-between;
   border-bottom: dotted black 2px;
+  background-color: #F7B835;
 }
 
 nav {
@@ -19,11 +21,20 @@ nav {
   align-items: flex-end;
 }
 
+.nav-title {
+  margin: 1vw;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1vw 2vw;
+  margin: 0 1vw;
+}
+
+.page-selection {
+  font-weight: bolder;
+  color: #416B8A;
 }
 
 .sign-in-container {
@@ -32,28 +43,167 @@ nav {
   align-items: center;
 }
 
-.page-selection {
-  font-weight: bolder;
-  color: #784226;
-}
-
-main {}
-
-footer {
-  display: flex;
-  justify-content: center;
-}
-
 .sign-in-img {
   width: 2vw;
+  height: 2vw;
+}
+
+/* main body styling */
+main {
+  background-color: #E0E5E6;
+}
+
+h2 {
+  padding-left: 1vw;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5vw 0.5vw;
+  place-items: center;
+  margin: 0 1vw;
+}
+
+.clarks {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.einkorn {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.emmer {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.kamut {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.rouge {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.rye {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.spelt {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.turkey {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.grain-card {
+  background-color: white;
+  border: solid black 2px;
+  border-radius: 1vw;
+  box-shadow: 3px 2px 1px #767B7F;
+  margin: 0.30vw;
+}
+
+.grain-card-header {
+  display: flex;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.9vw 0.9vw 0 0;
+  border-bottom: dotted black 2px;
+  height: 8vw;
+}
+
+.grain-header-img {
+  background-color: white;
+  padding: 0.25vw;
+  border-radius: 0.75vw;
+}
+
+.clarks-header {
+  background-image: url('./assets/clarks.jpg');
+}
+
+.einkorn-header {
+  background-image: url('./assets/einkorn.jpg');
+}
+
+.emmer-header {
+  background-image: url('./assets/emmer.jpg');
+}
+
+.kamut-header {
+  background-image: url('./assets/kamut.jpg');
+}
+
+.rouge-header {
+  background-image: url('./assets/rouge.jpg');
+}
+
+.rye-header {
+  background-image: url('./assets/rye.jpg');
+}
+
+.spelt-header {
+  background-image: url('./assets/spelt.jpg');
+}
+
+.turkey-header {
+  background-image: url('./assets/turkeyCO.jpg');
+}
+
+.grain-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 0 0 0.9vw 0.9vw;
+  padding-left: 1vw;
+}
+
+.grain-info {
+  margin: 0.5vw 0;
+}
+
+.farmer-number {
+  color: #416B8A;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h3,
+h4,
+p,
+a {
+  margin: 0;
+  padding: 0;
 }
 
 img {
   width: 3vw;
-  margin: 1vh;
+  height: 3vw;
+  margin: 1vw;
 }
 
-h1,
-p {
-  margin: 1vw;
+/* footer styling */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E0E5E6;
+  padding-top: 1vw;
+}
+
+.note {
+  font-size: 10px;
 }
