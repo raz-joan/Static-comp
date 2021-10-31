@@ -11,8 +11,8 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  border-bottom: dotted black 2px;
-  background-color: #F7B835;
+  border-bottom: dotted #E2E0DB 2px;
+  background-color: #EEC560;
 }
 
 nav {
@@ -22,7 +22,7 @@ nav {
 }
 
 .nav-title {
-  margin: 1vw;
+  margin: 1vw 0;
 }
 
 .navigation {
@@ -41,6 +41,11 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-right: 1.75vw;
+}
+
+h1 {
+  font-weight: bolder;
 }
 
 .sign-in-img {
@@ -50,10 +55,11 @@ nav {
 
 /* main body styling */
 main {
-  background-color: #E0E5E6;
+  background-color: #F8F5EE;
 }
 
 h2 {
+  font-size: 20px;
   padding-left: 1vw;
 }
 
@@ -61,9 +67,9 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 0.5vw 0.5vw;
-  place-items: center;
-  margin: 0 1vw;
+  gap: 1vw 1vw;
+  place-items: stretch;
+  padding: 1vw;
 }
 
 .clarks {
@@ -108,10 +114,7 @@ h2 {
 
 .grain-card {
   background-color: white;
-  border: solid black 2px;
-  border-radius: 1vw;
-  box-shadow: 3px 2px 1px #767B7F;
-  margin: 0.30vw;
+  box-shadow: 3px 2px 1px #E2E0DB;
 }
 
 .grain-card-header {
@@ -119,15 +122,15 @@ h2 {
   justify-content: space-between;
   background-size: cover;
   background-position: center;
-  border-radius: 0.9vw 0.9vw 0 0;
-  border-bottom: dotted black 2px;
-  height: 8vw;
+  border-bottom: dotted #E2E0DB 2px;
+  height: 10vw;
 }
 
 .grain-header-img {
   background-color: white;
   padding: 0.25vw;
-  border-radius: 0.75vw;
+  border-radius: 0.5vw;
+  opacity: 0.5;
 }
 
 .clarks-header {
@@ -167,18 +170,41 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  border-radius: 0 0 0.9vw 0.9vw;
   padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 .grain-info {
-  margin: 0.5vw 0;
+  margin: 1vw 0;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+.grain-classification {
+  font-size: 12px;
+  color: #767B7F;
+}
+
+.grain-link {
+  font-size: 12px;
+  background-color: #F8F5EE;
+}
+
+.grain-recipe {
+  font-size: 14px;
 }
 
 .farmer-number {
   color: #416B8A;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 h3,
@@ -200,10 +226,169 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #E0E5E6;
-  padding-top: 1vw;
+  background-color: #F8F5EE;
+  padding-top: 2vw;
 }
 
 .note {
   font-size: 10px;
+}
+
+/* responsive media queries */
+@media screen and (min-width: 800px) and (max-width: 1099px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    gap: 2vw 1vw;
+    place-items: stretch;
+    padding: 1vw;
+  }
+
+  .clarks {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  /* .einkorn {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .emmer {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .kamut {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .rouge {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .rye {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  .spelt {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  } */
+
+  .turkey {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 799px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 3vw 2vw;
+    place-items: space-around;
+    padding: 1vw;
+  }
+
+  .clarks {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .einkorn {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .emmer {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .kamut {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .rouge {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .rye {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .spelt {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  .turkey {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    flex-direction: column;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 3vw 2vw;
+    place-items: center;
+    padding: 1vw;
+  }
+
+  .clarks {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .einkorn {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .emmer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .kamut {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  .rouge {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  .rye {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+
+  .spelt {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+
+  .turkey {
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
 }
