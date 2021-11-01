@@ -203,6 +203,11 @@ h4,
   font-weight: bolder;
 }
 
+.grain-link,
+.grain-recipe {
+  color: black;
+}
+
 h3,
 h4,
 p,
