@@ -65,51 +65,11 @@ h2 {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1vw 1vw;
   place-items: stretch;
   padding: 2vw;
-}
-
-.clarks {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-.einkorn {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-.emmer {
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-
-.kamut {
-  grid-column: 4/5;
-  grid-row: 1/2;
-}
-
-.rouge {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-.rye {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.spelt {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-
-.turkey {
-  grid-column: 4/5;
-  grid-row: 2/3;
 }
 
 .grain-card {
@@ -195,6 +155,7 @@ h4,
 .grain-link {
   font-size: 12px;
   background-color: #F8F5EE;
+  padding: 0.7vw;
 }
 
 .farmer-number {
@@ -238,97 +199,17 @@ footer {
 /* responsive media queries */
 @media screen and (min-width: 800px) and (max-width: 1099px) {
   .grid-container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     gap: 2vw 1vw;
-  }
-
-  .clarks {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .einkorn {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  .emmer {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-
-  .kamut {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .rouge {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .rye {
-    grid-column: 3/4;
-    grid-row: 2/3;
-  }
-
-  .spelt {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  .turkey {
-    grid-column: 2/3;
-    grid-row: 3/4;
   }
 }
 
 @media screen and (min-width: 451px) and (max-width: 799px) {
+  nav {
+    flex-direction: column;
+  }
+
   .grid-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 3vw 2vw;
-  }
-
-  .clarks {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .einkorn {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  .emmer {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .kamut {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .rouge {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  .rye {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-
-  .spelt {
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-
-  .turkey {
-    grid-column: 2/3;
-    grid-row: 4/5;
   }
 }
 
@@ -342,49 +223,7 @@ footer {
   }
 
   .grid-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
     gap: 3vw 2vw;
     place-items: center;
-  }
-
-  .clarks {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .einkorn {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .emmer {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  .kamut {
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-
-  .rouge {
-    grid-column: 1/2;
-    grid-row: 5/6;
-  }
-
-  .rye {
-    grid-column: 1/2;
-    grid-row: 6/7;
-  }
-
-  .spelt {
-    grid-column: 1/2;
-    grid-row: 7/8;
-  }
-
-  .turkey {
-    grid-column: 1/2;
-    grid-row: 8/9;
   }
 }
