@@ -2,7 +2,7 @@
 
 Authored by: [Joan Rasmussen](https://github.com/raz-joan)  
 
-*Deploy this site [here](https://raz-joan.github.io/Static-comp/)!
+*See the deployed site [here](https://raz-joan.github.io/Static-comp/)!
 
 ## Table Of Contents
 - [Overview](#overview)
@@ -37,20 +37,14 @@ Authored by: [Joan Rasmussen](https://github.com/raz-joan)
 ## Illustrations    
 
 Provided Comp:  
-<img width="1107" alt="Screen Shot 2021-10-31 at 8 32 55 PM" src="https://user-images.githubusercontent.com/80644408/139613665-09bae5aa-1ec8-472a-9b6a-ada791166376.png">  
+<img width="750" alt="Screen Shot 2021-10-31 at 8 32 55 PM" src="https://user-images.githubusercontent.com/80644408/139613665-09bae5aa-1ec8-472a-9b6a-ada791166376.png">  
 
 Matched Comp:  
-<img width="1295" alt="Screen Shot 2021-10-31 at 8 47 37 PM" src="https://user-images.githubusercontent.com/80644408/139614802-bcf8bcd8-b784-4556-b84e-5c036eef7c51.png">  
-<img width="1265" alt="Screen Shot 2021-10-31 at 7 46 18 PM" src="https://user-images.githubusercontent.com/80644408/139615274-e16beb3f-ce8f-4c13-890c-119abc781d11.png">  
+<img width="750" alt="Screen Shot 2021-10-31 at 8 47 37 PM" src="https://user-images.githubusercontent.com/80644408/139614802-bcf8bcd8-b784-4556-b84e-5c036eef7c51.png">  
+<img width="750" alt="Screen Shot 2021-10-31 at 7 46 18 PM" src="https://user-images.githubusercontent.com/80644408/139615274-e16beb3f-ce8f-4c13-890c-119abc781d11.png">  
 
-First Breakpoint to Three Columns:  
-<img width="968" alt="Screen Shot 2021-10-31 at 7 46 59 PM" src="https://user-images.githubusercontent.com/80644408/139615401-bd212473-091b-49bb-b6ad-03cba869deab.png">  
-
-Second Breakpoint to Two Columns:  
-<img width="624" alt="Screen Shot 2021-10-31 at 7 47 35 PM" src="https://user-images.githubusercontent.com/80644408/139615574-036ef3cf-288a-432d-9467-5e92746375d6.png">
-
-Third Breakpoint to One Column (Mobile):  
-<img width="324" alt="Screen Shot 2021-10-31 at 8 43 29 PM" src="https://user-images.githubusercontent.com/80644408/139615594-d55db7e7-131e-48ad-84f4-afb2abb5986e.png">
+Responsive Views:   
+<img width="400" alt="Screen Shot 2021-10-31 at 7 47 35 PM" src="https://user-images.githubusercontent.com/80644408/139615574-036ef3cf-288a-432d-9467-5e92746375d6.png"><img width="300" alt="Screen Shot 2021-10-31 at 8 43 29 PM" src="https://user-images.githubusercontent.com/80644408/139615594-d55db7e7-131e-48ad-84f4-afb2abb5986e.png">
 
 ## Reflections  
   I found this project to be helpful and really fun. The steps involved were to:  
